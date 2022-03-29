@@ -12,12 +12,9 @@ A	B	C	Y
 1	1	1	11
 */
 
- module task1b(output logic [1:0] Y, input logic A, B, C);
+module task1b(output logic [1:0] Y, input logic A, B, C);
 
-always_comb
-begin
-Y = A + B + C; 
-end 
 
 
 endmodule
+
