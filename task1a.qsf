@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-# Date created = 19:32:17  March 26, 2022
+# Date created = 19:25:57  March 29, 2022
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		task1_tb_assignment_defaults.qdf
+#		task1a_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -39,17 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY task1_tb
+set_global_assignment -name TOP_LEVEL_ENTITY task1a
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:32:17  MARCH 26, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:25:57  MARCH 29, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
-set_global_assignment -name SYSTEMVERILOG_FILE task1_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE task1a.sv
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name SYSTEMVERILOG_FILE task1a.sv
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

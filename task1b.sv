@@ -16,7 +16,7 @@ A	B	C	Y
 
 always_comb
 begin
-Y = A + B + C; 
+Y = A + B + C;																	//The output "Y" is A+B+C. An adder.
 end 
 
 

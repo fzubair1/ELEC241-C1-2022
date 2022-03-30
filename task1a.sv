@@ -15,6 +15,7 @@ A	B	C	Y
 
 module task1a(output logic [1:0] Y, input logic A, B, C);
 
+
 // declare the wires
 
 wire notA, notB, notC, d1, d2, d3, e1, e2, e3, e4;
