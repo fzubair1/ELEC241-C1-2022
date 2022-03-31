@@ -11,7 +11,19 @@ always_comb begin
 	feedback[3] = (Q[14] ^ Q[0]);
 	feedback[2] = (Q[13] ^ Q[0]);
 	feedback[1] = Q[12];
-	feedback[0] = (Q[14] ^ Q[0]);
+	feedback[0] = Q([14] ^ Q[0]);
+	
+end
+
+always_ff @( posedge CLK, negedge n_RESET) begin
+	if (n_RESET == 1'b0) begin
+			Q <= N;
+	end else begin 
+		Q <= {feedback[5:0] , Q[10:1] };
+	end
+end
+
+
 
 
 
